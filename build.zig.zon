@@ -1,0 +1,10 @@
+.{
+    .name = "xtest",
+    .version = "0.1.0",
+    .dependencies = .{
+        .rtt = .{
+            .url = "https://github.com/rjsberry/rtt.zig/archive/d62df600900ec0e5a2856c43ea61d11c230567b5.tar.gz",
+            .hash = "1220c628dc4961b9a82e25e2a2b9e729255b3647bdaa80b72a3898598ea21a00ea28",
+        },
+    },
+}
