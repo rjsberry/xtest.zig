@@ -50,6 +50,10 @@ fn fail(comptime fmt: []const u8, args: anytype) noreturn {
 }
 
 /// Fails the test when the two values are not equal.
+///
+/// Note: this function is lifted straight from the standard library with
+/// dependency on stdio removed. It would be nice if we could eliminate this
+/// in the future!
 pub fn expectEqual(expected: anytype, actual: @TypeOf(expected)) !void {
     switch (@typeInfo(@TypeOf(actual))) {
         .NoReturn,
